@@ -1,0 +1,1046 @@
+Use device 0 as 0th gpu
+Use device 1 as 1th gpu
+Use device 2 as 2th gpu
+Use device 3 as 3th gpu
+Startfile from command line: Vert_hydrogen_1.4A.txt
+
+
+       ***********************************************************
+       *                    TeraChem v1.9-2022.10-dev            *
+       *  Git Version:                               *
+       *                   Development Version                   *
+       *           Chemistry at the Speed of Graphics!           *
+       ***********************************************************
+       * This program may only be used in connection with        *
+       * a valid license from PetaChem, LLC. Use of this program *
+       * or results thereof indicates acceptance of all terms    *
+       * and conditions stated in the license and that a valid   *
+       * license agreement between the user and PetaChem, LLC    *
+       * exists. PetaChem, LLC does not warrant the correctness  *
+       * of results or their suitability for any purpose.        *
+       * Please email bugs, suggestions, and comments to         *
+       *                  help@petachem.com                      *
+       *                                                         *
+       ***********************************************************
+
+
+       ***********************************************************
+       *  Compiled by amehmood     Sat Oct 22 01:22:51 EDT 2022  *
+       *  Supported architectures: sm_37 sm_60 sm_70 sm_80       *
+       *  Build cuda_11.3.r11.3/compiler.29745058_0              *
+       ***********************************************************
+
+
+ Job started   Thu May 11 11:36:09 2023
+ On a100-02 (available memory: 126933 MB)
+
+######################################### RUNTIME INFO ##########################################
+terachem -g0123 Vert_hydrogen_1.4A.txt 
+
+NVRM version: NVIDIA UNIX x86_64 Kernel Module  525.85.12  Sat Jan 28 02:10:06 UTC 2023
+GCC version:  gcc version 8.5.0 20210514 (Red Hat 8.5.0-16) (GCC) 
+
+	linux-vdso.so.1 (0x0000800000166000)
+	libcurl.so.4 => /gpfs/software/curl-7.52.1/lib/libcurl.so.4 (0x00007ffff7b69000)
+	libmpi.so.12 => /gpfs/software/intel/parallel-studio-xe/2020_1/compilers_and_libraries_2020.1.217/linux/mpi/intel64/lib/release/libmpi.so.12 (0x00007ffff69e6000)
+	libdftbplus.so => /gpfs/projects/LevineGroup/kberard/terachem_current/build/lib/libdftbplus.so (0x00007ffff64b3000)
+	libfsockets.so => /gpfs/projects/LevineGroup/kberard/terachem_current/build/lib/libfsockets.so (0x00007ffff62af000)
+	libxmlf90.so => /gpfs/projects/LevineGroup/kberard/terachem_current/build/lib/libxmlf90.so (0x00007ffff6089000)
+	libthcbox.so.1 => /gpfs/projects/LevineGroup/kberard/terachem_current/build/lib/libthcbox.so.1 (0x00007ffff4795000)
+	libgpubox.so.1 => /gpfs/projects/LevineGroup/kberard/terachem_current/build/lib/libgpubox.so.1 (0x00007ffff457c000)
+	libtensorbox.so.1 => /gpfs/projects/LevineGroup/kberard/terachem_current/build/lib/libtensorbox.so.1 (0x00007ffff435b000)
+	libiobox.so.1 => /gpfs/projects/LevineGroup/kberard/terachem_current/build/lib/libiobox.so.1 (0x00007ffff4147000)
+	libmoleculebox.so.1 => /gpfs/projects/LevineGroup/kberard/terachem_current/build/lib/libmoleculebox.so.1 (0x00007ffff3f30000)
+	libintbox.so.1 => /gpfs/projects/LevineGroup/kberard/terachem_current/build/lib/libintbox.so.1 (0x00007fffd7625000)
+	libsqmbox.so.1 => /gpfs/projects/LevineGroup/kberard/terachem_current/build/lib/libsqmbox.so.1 (0x00007fffd70bd000)
+	libgridbox.so.1 => /gpfs/projects/LevineGroup/kberard/terachem_current/build/lib/libgridbox.so.1 (0x00007fffd6bcc000)
+	libdftbox.so.1 => /gpfs/projects/LevineGroup/kberard/terachem_current/build/lib/libdftbox.so.1 (0x00007fffd68e7000)
+	libcibox.so.1 => /gpfs/projects/LevineGroup/kberard/terachem_current/build/lib/libcibox.so.1 (0x00007fffd61ce000)
+	libccbox.so.1 => /gpfs/projects/LevineGroup/kberard/terachem_current/build/lib/libccbox.so.1 (0x00007fffd5c4b000)
+	libsimbox.so.1 => /gpfs/projects/LevineGroup/kberard/terachem_current/build/lib/libsimbox.so.1 (0x00007fffd5a29000)
+	liboptbox.so.1 => /gpfs/projects/LevineGroup/kberard/terachem_current/build/lib/liboptbox.so.1 (0x00007fffd57e4000)
+	libsandboxbox.so.1 => /gpfs/projects/LevineGroup/kberard/terachem_current/build/lib/libsandboxbox.so.1 (0x00007fffd55d2000)
+	libcuda.so.1 => /lib64/libcuda.so.1 (0x00007fffd38f2000)
+	libcudart.so.11.0 => /gpfs/software/cuda/11.3/lib64/libcudart.so.11.0 (0x00007fffd3659000)
+	libcublas.so.11 => /gpfs/software/cuda/11.3/lib64/libcublas.so.11 (0x00007fffcc619000)
+	libcufft.so.10 => /gpfs/software/cuda/11.3/lib64/libcufft.so.10 (0x00007fffc0e20000)
+	libcusparse.so.11 => /gpfs/software/cuda/11.3/lib64/libcusparse.so.11 (0x00007fffb32a9000)
+	libcrypto.so.10 => /lib64/libcrypto.so.10 (0x00007fffb2e47000)
+	libssl.so.10 => /lib64/libssl.so.10 (0x00007fffb2bd8000)
+	libstdc++.so.6 => /lib64/libstdc++.so.6 (0x00007fffb2843000)
+	libm.so.6 => /lib64/libm.so.6 (0x00007fffb24c1000)
+	libiomp5.so => /gpfs/software/intel/parallel-studio-xe/2020_1/compilers_and_libraries_2020.1.217/linux/compiler/lib/intel64_lin/libiomp5.so (0x00007fffb20c1000)
+	libcilkrts.so.5 => /gpfs/software/intel/parallel-studio-xe/2020_1/compilers_and_libraries_2020.1.217/linux/compiler/lib/intel64_lin/libcilkrts.so.5 (0x00007fffb1e84000)
+	libgcc_s.so.1 => /lib64/libgcc_s.so.1 (0x00007fffb1c6c000)
+	libpthread.so.0 => /lib64/libpthread.so.0 (0x00007fffb1a4c000)
+	libc.so.6 => /lib64/libc.so.6 (0x00007fffb1686000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007ffff7dcf000)
+	libdl.so.2 => /lib64/libdl.so.2 (0x00007fffb1482000)
+	libz.so.1 => /lib64/libz.so.1 (0x00007fffb126a000)
+	libfabric.so.1 => /gpfs/software/intel/parallel-studio-xe/2020_1/compilers_and_libraries_2020.1.217/linux/mpi/intel64/libfabric/lib/libfabric.so.1 (0x00007fffb102b000)
+	librt.so.1 => /lib64/librt.so.1 (0x00007fffb0e23000)
+	libifport.so.5 => /gpfs/software/intel/parallel-studio-xe/2020_1/compilers_and_libraries_2020.1.217/linux/compiler/lib/intel64_lin/libifport.so.5 (0x00007fffb0bf5000)
+	libifcoremt.so.5 => /gpfs/software/intel/parallel-studio-xe/2020_1/compilers_and_libraries_2020.1.217/linux/compiler/lib/intel64_lin/libifcoremt.so.5 (0x00007fffb085a000)
+	libimf.so => /gpfs/software/intel/parallel-studio-xe/2020_1/compilers_and_libraries_2020.1.217/linux/compiler/lib/intel64_lin/libimf.so (0x00007fffb01d7000)
+	libsvml.so => /gpfs/software/intel/parallel-studio-xe/2020_1/compilers_and_libraries_2020.1.217/linux/compiler/lib/intel64_lin/libsvml.so (0x00007fffae725000)
+	libintlc.so.5 => /gpfs/software/intel/parallel-studio-xe/2020_1/compilers_and_libraries_2020.1.217/linux/compiler/lib/intel64_lin/libintlc.so.5 (0x00007fffae4ad000)
+	libcublasLt.so.11 => /gpfs/software/cuda/11.3/lib64/libcublasLt.so.11 (0x00007fffa28cf000)
+#################################################################################################
+
+Jobname: hydrogen_1
+Scratch directory: ./scr.hydrogen_1
+Cannot find license.dat file in the TeraChem installation directory /gpfs/projects/LevineGroup/kberard/terachem_current/build
+Random number seed: 1194581825
+
+
+TRYING THE NETWORK LICENSE...
+
+XYZ coordinates hydrogen_1.4A.xyz
+Molden File Output: ./scr.hydrogen_1/hydrogen_1.molden
+Using basis set: sto-3g
+Connecting to license server '54.208.252.40' port '8877'...
+dmrgstart not found
+Spin multiplicity: 1
+DIIS will use up to 10 vectors.
+Condition number limit for the DIIS overlap matrix is            0
+WF convergence threshold: 3.00e-06
+Using DIIS algorithm to converge WF
+Maximum number of SCF iterations: 100
+Incremental fock with rebuild every 8 iterations
+Will switch to conventional Fock if diffuse functions are detected
+X-matrix tolerance: 1.00e-04
+PRECISION: DOUBLE
+Using fractional orbital occupations
+Fractional occupations determined by gaussian broadening
+0 occupied orbitals will have integer occupation
+10 occupied orbitals will have fractional occupation
+kT is set to  0.150 a.u.
+DFT Functional requested: hf
+Method: Hartree-Fock 
+Wavefunction: RESTRICTED
+Scanning davidson option prefix: ah
+Initial guess generated by maximum overlap
+
+********************************************
+* Time-Dependent Configuration Interaction *
+********************************************
+Time-Dependent CI Parameters:
+Time-Dependent CI total simulation time: 0.10 fs
+Total Time-Dependent CI steps: 1
+Energy shifted as CASCI ground state energy == 0
+TD-CI output will be printed every 1 steps
+Simulating molecule under the presence for 1 distinct fields
+TD-CI wavefunctions will be stored for 4 steps
+*************WARNING***************
+Unrecognized or unnecessary keywords:
+These are being ignored.
+   closed_shell true
+   restricted true
+***********************************
+Connected!
+Checking your license...
+
+**************************************************************
+  Greetings, Martinez Group! You have 1000 licenses in total
+  IN USE: 8
+  AVAILABLE: 992
+**************************************************************
+
+
+using 1 out of 1 CUDA devices
+   Device 0: NVIDIA A100 80GB PCIe, 81085MB, CC 8.0 -- CPU THREAD 0
+-------------------------------------------------------------------
+ CPU Memory Available: 32172.75 MegaWords 
+ GPU Memory Available: 9879.66 MegaWords 
+ Maximum recommended basis set size: 37800 basis functions
+ (limited by GPU memory)
+-------------------------------------------------------------------
+
+
+Basis set:       sto-3g
+Total atoms:     10
+Total charge:    0
+Total electrons: 10 (5-alpha, 5-beta)
+Number electrons modeled by ECPs: 0
+Total orbitals:  10
+Total AO shells: 10 (10 S-shells; 0 P-shells; 0 D-shells; 0 F-shells; 0 G-shells)
+Spin multiplicity: 1
+Nuclear repulsion energy (QM atoms): 7.291186532187 a.u.
+
+
+                      *** Start SCF Iterations ***
+
+ Iter     DIIS Error       Energy change    J    K   LA  DFT          Energy        Time(s)
+---------------------------------------------------------------------------------------------
+Initial temperature is 0.150000
+Purifying guess...Purification run on CPU (double precision)  using TC2 purification.
+Density matrix purification finished after a total of 0 matrix multiplies
+   1     0.0802354274      -4.7193673458  0.00 0.00 0.00 0.00      -4.7193673458     0.00  
+   2     0.0109907893      +0.1439940882  0.00 0.00 0.00 0.00      -4.5753732576     0.00  
+   3     0.0080142432      +0.0211374511  0.00 0.00 0.00 0.00      -4.5542358065     0.00  
+   4     0.0023694255      +0.0044464456  0.00 0.00 0.00 0.00      -4.5497893609     0.00  
+   5     0.0017568298      +0.0015032701  0.00 0.00 0.00 0.00      -4.5482860909     0.00  
+   6     0.0005413338      +0.0039324178  0.00 0.00 0.00 0.00      -4.5443536730     0.00  
+   7     0.0000905188      +0.0011848440  0.00 0.00 0.00 0.00      -4.5431688290     0.00  
+   8     0.0000364341      +0.0002138611  0.00 0.00 0.00 0.00      -4.5429549679     0.00  
+   9     0.0000041976      +0.0001201477  0.00 0.00 0.00 0.00      -4.5428348203     0.00  
+  10     0.0000002499      +0.0000135424  0.00 0.00 0.00 0.00      -4.5428212778     0.00  
+---------------------------------------------------------------------------------------------
+FINAL ENERGY: -4.5428212778 a.u.
+WARNING: Final energy is higher than the lowest energy by     0.032552.
+Fractional Occupation Entropy: 1.8343775555
+Mermin Free Energy:            -4.8179779112
+HOMO-LUMO GAP: 5.492 eV
+CENTER OF MASS: {6.300000, 0.000000, 0.000000} ANGS
+DIPOLE MOMENT: {0.000000, 0.000000, 0.000000} (|D| = 0.000000) DEBYE
+Writing out molden info
+
+Running Mulliken population analysis...
+
+
+  Active Space Parameters
+--------------------------------------------
+Number of closed orbitals:               0
+Number of active orbitals:              10
+Number of virtual orbitals:              0
+Number of molecular orbitals:           10
+Number of basis functions:              10
+Number of active electrons:             10
+Number of alpha electrons:               5
+Number of beta electrons:                5
+
+  Orbital      Energy        Occupation
+-----------------------------------------
+      1       -0.498331        0.997055
+      2       -0.464585        0.994279
+      3       -0.407053        0.984038
+      4       -0.322079        0.942817
+      5       -0.194639        0.767082
+      6        0.007189        0.268866
+      7        0.174087        0.041913
+      8        0.316518        0.003698
+      9        0.440267        0.000230
+     10        0.528853        0.000021
+
+  CAS Parameters
+--------------------------------------------
+Number of determinants:              63504
+Number of singlet CSFs:              19404
+Number of doublet CSFs:                  0
+Number of triplet CSFs:              29700
+Number of quartet CSFs:                  0
+Number of quintet CSFs:              12375
+Number of sextet CSFs:                   0
+Number of septet CSFs:                1925
+Number of singlet states:                1
+Number of doublet states:                0
+Number of triplet states:                1
+Number of quartet states:                0
+Number of quintet states:                0
+Number of sextet states:                 0
+Number of septet states:                 0
+Using the direct solver
+
+
+OEI transform elapsed time = 0.00004 s
+TEI transform elapsed time = 0.00654 s
+
+
+  Direct CI Parameters
+--------------------------------------------
+H00 block size:                        400
+Orbital energy difference preconditioning (Evangelisti)
+
+Double precision sigma formation
+
+               Singlet Calculation:
+   Direct CI Davidson Diagonalization Parameters
+-----------------------------------------------
+Number of roots to find:                    1
+Number of guess vectors:                    1
+Maximum subspace size:                     20
+Number of vectors to save:                  1
+Collapse vectors per root:                  2
+Number of dets:                         63504
+Maximum Davidson iterations:              300
+Residual convergence:                 1.0e-04
+Orthogonality tolerance:              1.0e+01
+Use incremental sigma vectors:             No
+Use non-orthonormal trial vectors:         No
+
+Davidson memory usage:  20.84 MB
+
+
+
+      Guess Formation
+----------------------------
+ Total Time:       1.56 sec
+----------------------------
+
+  Root           Eigenvalue       Energy Change        Residual
+-------------------------------------------------------------------
+Iteration:    0   Subspace Size:    1
+Root: 1:       -12.15536296       -12.15536296         0.43413094  
+Total Iteration Time:       0.00 sec
+
+Iteration:    1   Subspace Size:    2
+Root: 1:       -12.31230758        -0.15694462         0.25283819  
+Total Iteration Time:       0.00 sec
+
+Iteration:    2   Subspace Size:    3
+Root: 1:       -12.35141516        -0.03910758         0.15809898  
+Total Iteration Time:       0.00 sec
+
+Iteration:    3   Subspace Size:    4
+Root: 1:       -12.36439928        -0.01298411         0.08421331  
+Total Iteration Time:       0.00 sec
+
+Iteration:    4   Subspace Size:    5
+Root: 1:       -12.36760935        -0.00321007         0.03939135  
+Total Iteration Time:       0.00 sec
+
+Iteration:    5   Subspace Size:    6
+Root: 1:       -12.36814761        -0.00053826         0.01838348  
+Total Iteration Time:       0.00 sec
+
+Iteration:    6   Subspace Size:    7
+Root: 1:       -12.36825917        -0.00011156         0.00737898  
+Total Iteration Time:       0.00 sec
+
+Iteration:    7   Subspace Size:    8
+Root: 1:       -12.36827898        -0.00001981         0.00357421  
+Total Iteration Time:       0.00 sec
+
+Iteration:    8   Subspace Size:    9
+Root: 1:       -12.36828634        -0.00000736         0.00285062  
+Total Iteration Time:       0.00 sec
+
+Iteration:    9   Subspace Size:   10
+Root: 1:       -12.36829339        -0.00000705         0.00301446  
+Total Iteration Time:       0.00 sec
+
+Iteration:   10   Subspace Size:   11
+Root: 1:       -12.36829778        -0.00000439         0.00181249  
+Total Iteration Time:       0.00 sec
+
+Iteration:   11   Subspace Size:   12
+Root: 1:       -12.36829911        -0.00000132         0.00100801  
+Total Iteration Time:       0.00 sec
+
+Iteration:   12   Subspace Size:   13
+Root: 1:       -12.36829955        -0.00000045         0.00071124  
+Total Iteration Time:       0.00 sec
+
+Iteration:   13   Subspace Size:   14
+Root: 1:       -12.36829985        -0.00000029         0.00053165  
+Total Iteration Time:       0.00 sec
+
+Iteration:   14   Subspace Size:   15
+Root: 1:       -12.36829999        -0.00000015         0.00036672  
+Total Iteration Time:       0.00 sec
+
+Iteration:   15   Subspace Size:   16
+Root: 1:       -12.36830005        -0.00000005         0.00023340  
+Total Iteration Time:       0.01 sec
+
+Iteration:   16   Subspace Size:   17
+Root: 1:       -12.36830006        -0.00000002         0.00012622  
+Total Iteration Time:       0.00 sec
+
+Iteration:   17   Subspace Size:   18
+Root: 1:       -12.36830007        -0.00000001         0.00005887  Converged
+Total Iteration Time:       0.00 sec
+
+Davidson converged in 17 iterations
+18 sigma vectors were formed
+
+    Total Davidson Time
+----------------------------
+ Total Time:       1.62 sec
+----------------------------
+
+ reading double array from recn_init.bin
+<S^2> for input CI vector  1 =   0.49300076371881
+<S^2> for state  1 =   0.00000000000000
+
+               Triplet Calculation:
+   Direct CI Davidson Diagonalization Parameters
+-----------------------------------------------
+Number of roots to find:                    1
+Number of guess vectors:                    1
+Maximum subspace size:                     20
+Number of vectors to save:                  1
+Collapse vectors per root:                  2
+Number of dets:                         63504
+Maximum Davidson iterations:              300
+Residual convergence:                 1.0e-04
+Orthogonality tolerance:              1.0e+01
+Use incremental sigma vectors:             No
+Use non-orthonormal trial vectors:         No
+
+Davidson memory usage:  20.84 MB
+
+
+
+      Guess Formation
+----------------------------
+ Total Time:       0.00 sec
+----------------------------
+
+  Root           Eigenvalue       Energy Change        Residual
+-------------------------------------------------------------------
+Iteration:    0   Subspace Size:    1
+Root: 1:       -12.11060961         0.25769046         0.42273895  
+Total Iteration Time:       0.00 sec
+
+Iteration:    1   Subspace Size:    2
+Root: 1:       -12.27078649        -0.16017688         0.24152622  
+Total Iteration Time:       0.00 sec
+
+Iteration:    2   Subspace Size:    3
+Root: 1:       -12.30780919        -0.03702270         0.14923835  
+Total Iteration Time:       0.00 sec
+
+Iteration:    3   Subspace Size:    4
+Root: 1:       -12.31956746        -0.01175828         0.07906423  
+Total Iteration Time:       0.00 sec
+
+Iteration:    4   Subspace Size:    5
+Root: 1:       -12.32223953        -0.00267207         0.03951955  
+Total Iteration Time:       0.00 sec
+
+Iteration:    5   Subspace Size:    6
+Root: 1:       -12.32283170        -0.00059217         0.01727490  
+Total Iteration Time:       0.00 sec
+
+Iteration:    6   Subspace Size:    7
+Root: 1:       -12.32294046        -0.00010876         0.00806488  
+Total Iteration Time:       0.00 sec
+
+Iteration:    7   Subspace Size:    8
+Root: 1:       -12.32296955        -0.00002909         0.00499007  
+Total Iteration Time:       0.00 sec
+
+Iteration:    8   Subspace Size:    9
+Root: 1:       -12.32298750        -0.00001794         0.00478886  
+Total Iteration Time:       0.00 sec
+
+Iteration:    9   Subspace Size:   10
+Root: 1:       -12.32300117        -0.00001368         0.00355213  
+Total Iteration Time:       0.00 sec
+
+Iteration:   10   Subspace Size:   11
+Root: 1:       -12.32300635        -0.00000518         0.00181480  
+Total Iteration Time:       0.00 sec
+
+Iteration:   11   Subspace Size:   12
+Root: 1:       -12.32300798        -0.00000163         0.00124083  
+Total Iteration Time:       0.00 sec
+
+Iteration:   12   Subspace Size:   13
+Root: 1:       -12.32300898        -0.00000100         0.00108531  
+Total Iteration Time:       0.00 sec
+
+Iteration:   13   Subspace Size:   14
+Root: 1:       -12.32300968        -0.00000071         0.00084392  
+Total Iteration Time:       0.00 sec
+
+Iteration:   14   Subspace Size:   15
+Root: 1:       -12.32301004        -0.00000035         0.00055624  
+Total Iteration Time:       0.00 sec
+
+Iteration:   15   Subspace Size:   16
+Root: 1:       -12.32301018        -0.00000014         0.00030311  
+Total Iteration Time:       0.00 sec
+
+Iteration:   16   Subspace Size:   17
+Root: 1:       -12.32301022        -0.00000004         0.00014938  
+Total Iteration Time:       0.00 sec
+
+Iteration:   17   Subspace Size:   18
+Root: 1:       -12.32301023        -0.00000001         0.00009592  Converged
+Total Iteration Time:       0.00 sec
+
+Davidson converged in 17 iterations
+18 sigma vectors were formed
+
+    Total Davidson Time
+----------------------------
+ Total Time:       1.68 sec
+----------------------------
+
+ reading double array from recn_init.bin
+<S^2> for input CI vector  1 =   0.49300076371881
+<S^2> for state  1 =   2.00000000000000
+
+Direct CI elapsed time = 1.82937 s
+
+Singlet state  1 energy:         -5.07711353639608
+
+       -0.72650563037601  X1 X2 X3 X4 X5
+        0.27763244987606  X1 X2 X3 X4 X6
+       -0.14593572241981  X1 X2 X3 A4 B5 B6 A7
+       -0.14593572241981  X1 X2 X3 B4 A5 A6 B7
+        0.11433684847320  X1 X2 X3 X5 X7
+       -0.10146039305118  X1 X2 A3 X4 B5 B6 A8
+       -0.10146039305118  X1 X2 B3 X4 A5 A6 B8
+       -0.09045774426221  X1 X2 X3 B4 A5 B6 A7
+       -0.09045774426221  X1 X2 X3 A4 B5 A6 B7
+       -0.08247077187630  X1 B2 X3 X4 A5 A6 B9
+       -0.08247077187630  X1 A2 X3 X4 B5 B6 A9
+        0.08037413084127  B1 X2 X3 X4 A5 A6 B10
+        0.08037413084127  A1 X2 X3 X4 B5 B6 A10
+       -0.07242143955633  X1 X2 X3 X6 X7
+        0.06978191323299  X1 X2 B3 A4 X5 A7 B8
+        0.06978191323298  X1 X2 A3 B4 X5 B7 A8
+        0.06840763405007  X1 X2 X4 X5 X8
+       -0.06080399671272  X1 X2 B3 X4 A5 B6 A8
+       -0.06080399671272  X1 X2 A3 X4 B5 A6 B8
+        0.05786433118435  X1 A2 X3 B4 X5 B7 A9
+        0.05786433118435  X1 B2 X3 A4 X5 A7 B9
+        0.05722294292303  X1 X2 X3 X5 X6
+        0.05547797815760  X1 X2 X3 A4 A5 B6 B7
+        0.05547797815760  X1 X2 X3 B4 B5 A6 A7
+        0.05218699133235  X1 X2 X3 X4 X7
+       -0.04878658631031  X1 B2 X3 X4 A5 B6 A9
+       -0.04878658631031  X1 A2 X3 X4 B5 A6 B9
+        0.04819495200970  X1 X2 A3 B4 X5 A7 B8
+        0.04819495200970  X1 X2 B3 A4 X5 B7 A8
+        0.04783209583470  B1 X2 X3 X4 A5 B6 A10
+        0.04783209583470  A1 X2 X3 X4 B5 A6 B10
+        0.04744155227669  X1 X2 X3 B4 X5 A6
+        0.04744155227669  X1 X2 X3 A4 X5 B6
+        0.04717100819978  X1 X3 X4 X5 X9
+       -0.04654157933966  B1 X2 X3 A4 X5 A7 B10
+       -0.04654157933966  A1 X2 X3 B4 X5 B7 A10
+        0.04307074802549  X1 X2 X3 X4 A5 B7
+        0.04307074802548  X1 X2 X3 X4 B5 A7
+       -0.04232500140794  X1 X2 B3 X4 A5 X7
+       -0.04232500140794  X1 X2 A3 X4 B5 X7
+        0.04157911006086  X1 X2 X3 X5 A6 B8
+        0.04157911006086  X1 X2 X3 X5 B6 A8
+        0.04144401755517  X1 A2 B3 X4 X5 B8 A9
+        0.04144401755517  X1 B2 A3 X4 X5 A8 B9
+        0.04140873858725  X2 X3 X4 X5 X10
+        0.04065639633846  X1 X2 A3 X4 A5 B6 B8
+        0.04065639633846  X1 X2 B3 X4 B5 A6 A8
+        0.04017883485256  X1 X2 X4 X5 X7
+        0.04017213167665  X1 B2 X3 A4 X5 B7 A9
+        0.04017213167665  X1 A2 X3 B4 X5 A7 B9
+       -0.03953935003660  X1 X2 X4 X6 X8
+       -0.03775061211879  X1 X2 B3 A4 X6 A7 B8
+       -0.03775061211879  X1 X2 A3 B4 X6 B7 A8
+       -0.03655658603999  A1 X2 B3 X4 X5 B8 A10
+       -0.03655658603999  B1 X2 A3 X4 X5 A8 B10
+        0.03629287868330  X1 X2 B3 A4 X5 A6 B7
+        0.03629287868330  X1 X2 A3 B4 X5 B6 A7
+        0.03579040768950  X1 X2 X3 X5 X8
+        0.03566706628951  X1 X2 X4 X5 X6
+        0.03368418556599  X1 A2 X3 X4 A5 B6 B9
+        0.03368418556599  X1 B2 X3 X4 B5 A6 A9
+        0.03325599059368  X1 X3 X4 X5 X7
+       -0.03291914458709  X1 X2 X3 B4 A5 A7 B8
+       -0.03291914458709  X1 X2 X3 A4 B5 B7 A8
+       -0.03254203500657  B1 X2 X3 X4 B5 A6 A10
+       -0.03254203500657  A1 X2 X3 X4 A5 B6 B10
+       -0.03157180402794  B1 X2 X3 A4 X5 B7 A10
+       -0.03157180402794  A1 X2 X3 B4 X5 A7 B10
+       -0.03154526484696  X1 A2 X3 B4 X5 B6 A8
+       -0.03154526484696  X1 B2 X3 A4 X5 A6 B8
+        0.03152274849403  X1 A2 B3 X4 X5 A8 B9
+        0.03152274849403  X1 B2 A3 X4 X5 B8 A9
+       -0.03131537082063  B1 A2 X3 X4 X5 A9 B10
+       -0.03131537082063  A1 B2 X3 X4 X5 B9 A10
+       -0.03112276537918  A1 X2 X3 B4 X5 B6 A9
+       -0.03112276537918  B1 X2 X3 A4 X5 A6 B9
+        0.03063246416622  X1 A2 X3 X4 B5 B7 A8
+        0.03063246416622  X1 B2 X3 X4 A5 A7 B8
+       -0.03031705778726  X1 B2 X3 A4 X6 A7 B9
+       -0.03031705778726  X1 A2 X3 B4 X6 B7 A9
+       -0.03025942139442  X1 X2 A3 B4 X5 B6 A9
+       -0.03025942139442  X1 X2 B3 A4 X5 A6 B9
+        0.02968798043676  X1 X2 B3 A5 A6 X7 B8
+        0.02968798043676  X1 X2 A3 B5 B6 X7 A8
+        0.02933231442817  X1 A2 X3 B4 X5 B6 A10
+        0.02933231442817  X1 B2 X3 A4 X5 A6 B10
+        0.02915145168578  X1 X2 X3 X4 X8
+        0.02907375980505  A1 X2 X3 X4 B5 B7 A9
+        0.02907375980505  B1 X2 X3 X4 A5 A7 B9
+       -0.02843059106482  X1 B2 X3 X4 A5 A7 B10
+       -0.02843059106482  X1 A2 X3 X4 B5 B7 A10
+        0.02841274996723  X1 X2 A3 X4 B5 B7 A9
+        0.02841274996723  X1 X2 B3 X4 A5 A7 B9
+        0.02825159464246  X1 X3 X4 X5 X8
+        0.02792356656562  X1 A2 X3 X4 B5 A7 B8
+        0.02792356656562  X1 B2 X3 X4 A5 B7 A8
+       -0.02772391633194  A1 X2 B3 X4 X5 A8 B10
+       -0.02772391633194  B1 X2 A3 X4 X5 B8 A10
+       -0.02752849864675  X1 X2 A3 B4 X5 A6 B9
+       -0.02752849864675  X1 X2 B3 A4 X5 B6 A9
+       -0.02661281125158  X1 X3 X4 X6 X9
+        0.02643361576233  X1 X2 X3 X5 X9
+       -0.02620806831294  B1 A2 X3 X4 X5 B9 A10
+       -0.02620806831294  A1 B2 X3 X4 X5 A9 B10
+        0.02617925276232  X1 X3 X4 X5 X6
+        0.02566576630286  B1 X2 X3 A4 X6 A7 B10
+        0.02566576630286  A1 X2 X3 B4 X6 B7 A10
+       -0.02548002550398  X1 X2 X4 X5 A7 B9
+       -0.02548002550398  X1 X2 X4 X5 B7 A9
+       -0.02543231649421  X1 B2 X3 A4 X5 X8
+       -0.02543231649421  X1 A2 X3 B4 X5 X8
+        0.02528930776026  X2 X3 X4 X5 X6
+       -0.02508107185416  X1 X2 B3 A4 X6 B7 A8
+       -0.02508107185416  X1 X2 A3 B4 X6 A7 B8
+        0.02498397945383  X1 X2 X4 X5 X9
+        0.02469175481002  X2 X3 X4 X5 X7
+       -0.02456544051729  X1 A2 B3 X4 X5 B7 A8
+       -0.02456544051729  X1 B2 A3 X4 X5 A7 B8
+       -0.02441975320284  X1 B2 A3 X4 X5 A6 B7
+       -0.02441975320284  X1 A2 B3 X4 X5 B6 A7
+        0.02434459557962  X2 X3 X4 X5 X8
+        0.02429844102227  B1 X2 A3 X4 X5 A6 B8
+        0.02429844102226  A1 X2 B3 X4 X5 B6 A8
+       -0.02395762120652  X1 X2 B3 B4 X5 A6 A7
+       -0.02395762120652  X1 X2 A3 A4 X5 B6 B7
+        0.02382488730670  X2 X3 X4 X5 X9
+       -0.02381110200584  X1 X2 X4 X5 A6 B10
+       -0.02381110200584  X1 X2 X4 X5 B6 A10
+        0.02362450073342  X1 A2 X3 B4 X5 A6 B10
+        0.02362450073342  X1 B2 X3 A4 X5 B6 A10
+       -0.02343100748205  B1 X2 X3 X4 A5 X8
+       -0.02343100748205  A1 X2 X3 X4 B5 X8
+        0.02339519071517  A1 X2 X3 X4 B5 A7 B9
+        0.02339519071517  B1 X2 X3 X4 A5 B7 A9
+       -0.02312195447522  X2 X3 X4 X6 X10
+        0.02268421458712  X1 X2 B3 X4 A5 X6
+        0.02268421458712  X1 X2 A3 X4 B5 X6
+       -0.02254069632767  X1 B2 A3 X4 X6 A8 B9
+       -0.02254069632767  X1 A2 B3 X4 X6 B8 A9
+       -0.02194680721720  X1 X2 B3 A4 X5 A8 B9
+       -0.02194680721720  X1 X2 A3 B4 X5 B8 A9
+        0.02170299841698  X1 X3 X4 X5 X10
+        0.02162873155767  X1 X2 X3 A4 A5 B7 B8
+        0.02162873155767  X1 X2 X3 B4 B5 A7 A8
+       -0.02158696122329  X1 X2 A3 A4 X5 B7 B8
+       -0.02158696122329  X1 X2 B3 B4 X5 A7 A8
+       -0.02140072149285  X1 X2 X5 X7 X8
+        0.02116493697946  X1 B2 X3 A5 A6 X7 B9
+        0.02116493697946  X1 A2 X3 B5 B6 X7 A9
+        0.02082635754160  X1 X2 A4 B5 B6 A7 X8
+        0.02082635754160  X1 X2 B4 A5 A6 B7 X8
+        0.02024518982583  X1 X2 B3 X4 X5 A7
+        0.02024518982583  X1 X2 A3 X4 X5 B7
+       -0.02022611466207  B1 A2 X3 X4 X5 A6 B7
+       -0.02022611466207  A1 B2 X3 X4 X5 B6 A7
+        0.02008004337434  X1 X2 B3 X4 A5 A8 B10
+        0.02008004337434  X1 X2 A3 X4 B5 B8 A10
+
+Triplet state  1 energy:         -5.03182369498841
+
+        0.50004369584927  X1 X2 X3 X4 B5 A6
+       -0.50004369584926  X1 X2 X3 X4 A5 B6
+        0.17220905277198  X1 X2 X3 A4 X5 B7
+       -0.17220905277198  X1 X2 X3 B4 X5 A7
+        0.11721693452503  X1 X2 X3 B4 X6 A7
+       -0.11721693452503  X1 X2 X3 A4 X6 B7
+       -0.10502827363862  X1 X2 X3 B4 A5 X6
+        0.10502827363862  X1 X2 X3 A4 B5 X6
+       -0.10418479038141  X1 X2 B3 X4 X5 A8
+        0.10418479038141  X1 X2 A3 X4 X5 B8
+       -0.09941615998518  X1 X2 X3 X4 B6 A7
+        0.09941615998518  X1 X2 X3 X4 A6 B7
+       -0.08149047940429  X1 X2 X3 B5 A6 X7
+        0.08149047940429  X1 X2 X3 A5 B6 X7
+        0.08043134343716  X1 X2 A3 X4 B5 B6 A7
+       -0.08043134343716  X1 X2 B3 X4 A5 A6 B7
+        0.07867880569685  X1 A2 X3 X4 X5 B9
+       -0.07867880569685  X1 B2 X3 X4 X5 A9
+        0.07461806005314  X1 X2 X3 A4 B5 B6 A8
+       -0.07461806005314  X1 X2 X3 B4 A5 A6 B8
+        0.07231419365834  B1 X2 X3 X4 X5 A10
+       -0.07231419365834  A1 X2 X3 X4 X5 B10
+        0.06852824070615  X1 X2 B3 X4 X6 A8
+       -0.06852824070615  X1 X2 A3 X4 X6 B8
+        0.05906222298179  X1 B2 X3 X4 A5 A6 B8
+       -0.05906222298179  X1 A2 X3 X4 B5 B6 A8
+        0.05501572724825  X1 X2 B3 X4 A5 A6 B9
+       -0.05501572724825  X1 X2 A3 X4 B5 B6 A9
+        0.05450187665941  B1 X2 X3 X4 A5 A6 B9
+       -0.05450187665941  A1 X2 X3 X4 B5 B6 A9
+       -0.05293480110587  X1 A2 X3 X4 X6 B9
+        0.05293480110587  X1 B2 X3 X4 X6 A9
+       -0.05187144207098  X1 B2 X3 X4 A5 A6 B10
+        0.05187144207098  X1 A2 X3 X4 B5 B6 A10
+        0.04978901485047  X1 X2 A3 B4 A5 B6 A7 B8
+       -0.04978901485047  X1 X2 B3 A4 B5 A6 B7 A8
+       -0.04946095450407  X1 X2 A3 B4 B5 A6 A7 B8
+        0.04946095450407  X1 X2 B3 A4 A5 B6 B7 A8
+       -0.04538424029535  X1 X2 X4 B5 A6 X8
+        0.04538424029535  X1 X2 X4 A5 B6 X8
+        0.04101626488325  A1 X2 X3 X4 X6 B10
+       -0.04101626488325  B1 X2 X3 X4 X6 A10
+       -0.03760124018648  X1 A2 X3 B4 B5 A6 A7 B9
+        0.03760124018648  X1 B2 X3 A4 A5 B6 B7 A9
+        0.03580726202964  X1 X2 B3 X4 A6 X7
+       -0.03580726202964  X1 X2 A3 X4 B6 X7
+        0.03569019920122  X1 X2 B3 A4 X5 X6
+       -0.03569019920122  X1 X2 A3 B4 X5 X6
+       -0.03551664142789  X1 X2 A3 B4 B5 A6 B7 A8
+        0.03551664142789  X1 X2 B3 A4 A5 B6 A7 B8
+       -0.03545094229325  X1 X2 B3 A4 B5 A6 A7 B8
+        0.03545094229325  X1 X2 A3 B4 A5 B6 B7 A8
+        0.03488512917264  B1 X2 X3 A4 B5 A6 B7 A10
+       -0.03488512917264  A1 X2 X3 B4 A5 B6 A7 B10
+       -0.03439038972601  X1 X2 X3 B5 X6 A8
+        0.03439038972601  X1 X2 X3 A5 X6 B8
+       -0.03437915360574  X1 X2 X4 B5 A6 X7
+        0.03437915360573  X1 X2 X4 A5 B6 X7
+       -0.03350890365507  X1 B2 X3 A4 B5 A6 B7 A9
+        0.03350890365507  X1 A2 X3 B4 A5 B6 A7 B9
+       -0.03129616247752  X1 X3 X4 B5 A6 X9
+        0.03129616247752  X1 X3 X4 A5 B6 X9
+       -0.03125804369952  X1 A2 B3 X4 B5 A6 A8 B9
+        0.03125804369952  X1 B2 A3 X4 A5 B6 B8 A9
+       -0.03125731251866  X1 B2 A3 X4 B5 A6 B8 A9
+        0.03125731251866  X1 A2 B3 X4 A5 B6 A8 B9
+        0.03124871909134  A1 X2 X3 B4 B5 A6 A7 B10
+       -0.03124871909134  B1 X2 X3 A4 A5 B6 B7 A10
+       -0.03086719055666  X1 X2 A3 B4 B5 X6 A7
+        0.03086719055666  X1 X2 B3 A4 A5 X6 B7
+       -0.03069349664766  X1 A2 X3 X4 B5 X7
+        0.03069349664766  X1 B2 X3 X4 A5 X7
+       -0.03067629169279  X1 X2 X3 X4 B7 A8
+        0.03067629169279  X1 X2 X3 X4 A7 B8
+       -0.03034344685146  X1 X2 X3 B5 A6 X8
+        0.03034344685146  X1 X2 X3 A5 B6 X8
+        0.02978611383853  B1 X2 X3 A4 X5 A6 B10
+       -0.02978611383853  A1 X2 X3 B4 X5 B6 A10
+       -0.02909228838558  X1 B2 X3 A4 X5 A6 B7
+        0.02909228838558  X1 A2 X3 B4 X5 B6 A7
+       -0.02889331375497  X1 A2 X3 B4 B5 A6 B7 A9
+        0.02889331375497  X1 B2 X3 A4 A5 B6 A7 B9
+        0.02887009013061  A1 X2 X3 B4 B5 A6 B7 A10
+       -0.02887009013061  B1 X2 X3 A4 A5 B6 A7 B10
+       -0.02885321504730  X1 B2 X3 A4 B5 A6 A7 B9
+        0.02885321504730  X1 A2 X3 B4 A5 B6 B7 A9
+        0.02862888817778  A1 X2 X3 X4 B5 B7 A10
+       -0.02862888817778  B1 X2 X3 X4 A5 A7 B10
+        0.02861743838691  B1 X2 X3 A4 B5 A6 A7 B10
+       -0.02861743838691  A1 X2 X3 B4 A5 B6 B7 A10
+       -0.02843443820652  X1 X2 B3 X4 A5 B6 A7
+        0.02843443820652  X1 X2 A3 X4 B5 A6 B7
+       -0.02810122336752  X1 B2 X3 X4 A6 A7 B8
+        0.02810122336752  X1 A2 X3 X4 B6 B7 A8
+       -0.02799539864083  X2 X3 X4 B5 A6 X10
+        0.02799539864083  X2 X3 X4 A5 B6 X10
+        0.02788828842675  X1 X2 X3 X5 B6 A9
+       -0.02788828842675  X1 X2 X3 X5 A6 B9
+        0.02788809349800  X1 X2 X3 B4 A6 A7 B8
+       -0.02788809349800  X1 X2 X3 A4 B6 B7 A8
+       -0.02779554392104  X1 X2 A3 X4 X5 B6
+        0.02779554392104  X1 X2 B3 X4 X5 A6
+        0.02739393313057  X1 A2 X3 B4 B5 X6 A8
+       -0.02739393313057  X1 B2 X3 A4 A5 X6 B8
+        0.02738433281197  B1 X2 X3 A4 X5 A6 B8
+       -0.02738433281197  A1 X2 X3 B4 X5 B6 A8
+        0.02715438053642  X1 X2 A3 B4 B5 X6 A9
+       -0.02715438053642  X1 X2 B3 A4 A5 X6 B9
+       -0.02709420723651  X1 X2 A3 X5 X7 B8
+        0.02709420723651  X1 X2 B3 X5 X7 A8
+       -0.02677892203135  X1 X2 B3 B4 A5 B6 A7 A8
+        0.02677892203135  X1 X2 A3 A4 B5 A6 B7 B8
+        0.02639605968981  X1 X2 X3 B4 A5 B6 A8
+       -0.02639605968981  X1 X2 X3 A4 B5 A6 B8
+        0.02621577112736  A1 X2 X3 X4 B5 B7 A8
+       -0.02621577112736  B1 X2 X3 X4 A5 A7 B8
+        0.02596082563714  X1 X2 X3 X5 B6 A7
+       -0.02596082563714  X1 X2 X3 X5 A6 B7
+       -0.02524186573374  X1 X2 X3 A4 B5 B7 A9
+        0.02524186573374  X1 X2 X3 B4 A5 A7 B9
+       -0.02479518099650  X1 X2 X3 A4 B5 X7
+        0.02479518099650  X1 X2 X3 B4 A5 X7
+        0.02463472874599  X1 X2 A3 B4 X5 B6 A10
+       -0.02463472874599  X1 X2 B3 A4 X5 A6 B10
+       -0.02453842386650  X1 X2 B3 X4 A6 A7 B9
+        0.02453842386650  X1 X2 A3 X4 B6 B7 A9
+        0.02449209583152  X1 X3 X4 A5 B6 X7
+       -0.02449209583152  X1 X3 X4 B5 A6 X7
+        0.02446283346187  B1 X2 A3 X4 B5 A6 B8 A10
+       -0.02446283346187  A1 X2 B3 X4 A5 B6 A8 B10
+       -0.02406542582221  X1 X3 X4 B5 A6 X8
+        0.02406542582220  X1 X3 X4 A5 B6 X8
+        0.02393159016013  A1 B2 X3 X4 B5 A6 A9 B10
+       -0.02393159016013  B1 A2 X3 X4 A5 B6 B9 A10
+        0.02376029771415  B1 A2 X3 X4 B5 A6 B9 A10
+       -0.02376029771415  A1 B2 X3 X4 A5 B6 A9 B10
+       -0.02372702322829  X1 X2 A3 X4 B5 B7 A10
+        0.02372702322829  X1 X2 B3 X4 A5 A7 B10
+        0.02363240630819  A1 X2 B3 X4 B5 A6 A8 B10
+       -0.02363240630819  B1 X2 A3 X4 A5 B6 B8 A10
+        0.02357467108490  X1 X2 A3 X6 X7 B8
+       -0.02357467108490  X1 X2 B3 X6 X7 A8
+       -0.02323015443834  X1 X2 A3 A4 A5 B6 B7 B8
+        0.02323015443834  X1 X2 B3 B4 B5 A6 A7 A8
+       -0.02300186785166  X1 B2 A3 X4 B5 A6 A8 B9
+        0.02300186785166  X1 A2 B3 X4 A5 B6 B8 A9
+        0.02298292083689  A1 X2 X3 B4 B5 X6 A9
+       -0.02298292083689  B1 X2 X3 A4 A5 X6 B9
+       -0.02297963812415  X1 A2 B3 X4 B5 A6 B8 A9
+        0.02297963812415  X1 B2 A3 X4 A5 B6 A8 B9
+       -0.02265930299997  X1 X2 A4 X5 B7 X8
+        0.02265930299997  X1 X2 B4 X5 A7 X8
+       -0.02264180188355  X1 A2 X3 X5 X7 B9
+        0.02264180188355  X1 B2 X3 X5 X7 A9
+       -0.02252641267592  X2 X3 X4 B5 A6 X7
+        0.02252641267592  X2 X3 X4 A5 B6 X7
+        0.02241554975428  X1 X2 A3 B4 X6 X7
+       -0.02241554975428  X1 X2 B3 A4 X6 X7
+       -0.02211269826214  B1 X2 X3 X4 A6 A7 B9
+        0.02211269826214  A1 X2 X3 X4 B6 B7 A9
+       -0.02185353194182  X1 A2 X3 B4 B5 X6 A10
+        0.02185353194182  X1 B2 X3 A4 A5 X6 B10
+       -0.02133099630195  X1 X2 X4 B5 A6 X9
+        0.02133099630195  X1 X2 X4 A5 B6 X9
+       -0.02124701790145  X1 X2 X3 X4 B5 A8
+        0.02124701790145  X1 X2 X3 X4 A5 B8
+        0.02107655414751  X1 B2 X3 X4 A6 A7 B10
+       -0.02107655414751  X1 A2 X3 X4 B6 B7 A10
+        0.02092630522304  X1 X2 X3 X6 B7 A8
+       -0.02092630522304  X1 X2 X3 X6 A7 B8
+        0.02081077939478  X1 X2 A3 A4 B5 B6 A7 B8
+       -0.02081077939477  X1 X2 B3 B4 A5 A6 B7 A8
+        0.02055999773894  A1 X2 B3 X4 B5 A6 B7 A9
+       -0.02055999773894  B1 X2 A3 X4 A5 B6 A7 B9
+       -0.02042582517344  A1 X2 X3 A4 B5 A6 B7 B10
+        0.02042582517344  B1 X2 X3 B4 A5 B6 A7 A10
+       -0.02041707500688  X1 X2 B3 A4 B5 B6 A7 A8
+        0.02041707500688  X1 X2 A3 B4 A5 A6 B7 B8
+
+  Root   Mult.   Total Energy (a.u.)   Ex. Energy (a.u.)     Ex. Energy (eV)     Ex. Energy (nm)
+-------------------------------------------------------------------------------------------------
+     1  singlet         -5.07711354
+     2  triplet         -5.03182369          0.04528984          1.23239908       1006.03953897
+
+Singlet state dipole moments:
+
+  Root       Dx         Dy         Dz         |D|  (Debye)
+------------------------------------------------------------
+     1    -0.0000     0.0000     0.0000     0.0000
+
+Triplet state dipole moments:
+
+  Root       Dx         Dy         Dz         |D|  (Debye)
+------------------------------------------------------------
+     1    -0.0000     0.0000     0.0000     0.0000
+
+Singlet state Mulliken charges:
+
+  Atom   Root  1  
+------------
+ H     -0.0022
+ H      0.0020
+ H      0.0002
+ H     -0.0001
+ H      0.0001
+ H      0.0001
+ H     -0.0001
+ H      0.0002
+ H      0.0020
+ H     -0.0022
+Triplet state Mulliken charges:
+
+  Atom   Root  1  
+------------
+ H      0.0002
+ H     -0.0012
+ H      0.0026
+ H     -0.0021
+ H      0.0005
+ H      0.0005
+ H     -0.0021
+ H      0.0026
+ H     -0.0012
+ H      0.0002
+Singlet state electric quadrupole moments (Cartesian):
+Operator origin (a.u.):    11.905274,     0.000000,     0.000000 
+
+ Root     Qxy        Qxz        Qyz        Qxx        Qyy        Qzz       R^2
+--------------------------------------------------------------------------------------------
+    1     0.0000     0.0000     0.0000    -4.9293    -6.9107    -6.9107   -18.7507
+
+Triplet state electric quadrupole moments (Cartesian):
+Operator origin (a.u.):    11.905274,     0.000000,     0.000000 
+
+ Root     Qxy        Qxz        Qyz        Qxx        Qyy        Qzz       R^2
+--------------------------------------------------------------------------------------------
+    1     0.0000     0.0000     0.0000    -4.8447    -6.8701    -6.8701   -18.5849
+
+ writing States_E.bin
+ writing States_Cn.bin
+nao: 10, nmo: 10, acti: 10, virt: 0, XZeros: 0
+Skipping orbital diabatization.Writing out molden info
+after transforming AO dipoles to MO dipoles
+writing orbital files
+ writing NewC.bin
+ writing NewCoors.bin
+ reading double array from recn_init.bin
+Reading ReCn_init from file...
+before tdcistartup
+WARNING: Input asked for a correlation function after field #0, but field #0 not a pulse and therefore has no endpoint. Setting corrfn_t_[0] to t=0.
+Correlation Function #0 is at 0.000000 as, step #0
+ writing Hfrz_tdci.bin
+ writing Vtuvw_tdci.bin
+initial CI vector:
+ writing ReCn_init_debug.bin
+ writing ImCn_init_debug.bin
+energy_shift_, eCore_: -5.077114, 7.291187
+Energy shifted by: -12.368300
+after tdcistartup, before compute
+Initial energy: -4.861926003075
+Time spent propagating TDCI: 0.000006 seconds
+Final TDCI Energy: -3.401710806656646824
+writing misc.bin
+after compute
+simbox::TdciGetReCn pointed at: 0x2f117a40 
+  Active Space Parameters
+--------------------------------------------
+Number of closed orbitals:               0
+Number of active orbitals:              10
+Number of virtual orbitals:              0
+Number of molecular orbitals:           10
+Number of basis functions:              10
+Number of active electrons:             10
+Number of alpha electrons:               5
+Number of beta electrons:                5
+
+  Orbital      Energy        Occupation
+-----------------------------------------
+      1       -0.498331        0.997055
+      2       -0.464585        0.994279
+      3       -0.407053        0.984038
+      4       -0.322079        0.942817
+      5       -0.194639        0.767082
+      6        0.007189        0.268866
+      7        0.174087        0.041913
+      8        0.316518        0.003698
+      9        0.440267        0.000230
+     10        0.528853        0.000021
+
+  CAS Parameters
+--------------------------------------------
+Number of determinants:              63504
+Number of singlet CSFs:              19404
+Number of doublet CSFs:                  0
+Number of triplet CSFs:              29700
+Number of quartet CSFs:                  0
+Number of quintet CSFs:              12375
+Number of sextet CSFs:                   0
+Number of septet CSFs:                1925
+Number of singlet states:                1
+Number of doublet states:                0
+Number of triplet states:                1
+Number of quartet states:                0
+Number of quintet states:                0
+Number of sextet states:                 0
+Number of septet states:                 0
+Using the direct solver
+
+entered compute_gradient_tdci
+normalizing 1./ReNorm = -191379072
+Building Xtilde...
+
+Active Fock Matrix
+----------------------------
+ K Time:           0.00 sec
+ Total Time:       0.00 sec
+----------------------------
+
+Active TPDM
+----------------------------
+ Total Time:       0.00 sec
+----------------------------
+
+Building Z-vector RHS...
+
+Solving CPSCF equations
+Using DIIS solver
+
+ Iter         Residual          Time (s)  
+------  --------------------  ------------
+    1      0.000000000000         0.00
+
+CPSCF converged
+
+      Total CPSCF Time
+----------------------------
+ J Time:           0.00 sec
+ K Time:           0.00 sec
+ Total Time:       0.00 sec
+----------------------------
+
+Building X...
+
+----------------------------
+ J Time:           0.00 sec
+ K Time:           0.00 sec
+ Total Time:       0.00 sec
+----------------------------
+
+ReNorm: 4.853536
+unscaled real grad:
+-0.156813, 0.000000, 0.000000, 0.132473, 0.000000, 0.000000, -0.111490, 0.000000, 0.000000, 0.102129, 0.000000, 0.000000, -0.100257, 0.000000, 0.000000, 0.100257, 0.000000, 0.000000, -0.102129, 0.000000, 0.000000, 0.111490, 0.000000, 0.000000, -0.132473, 0.000000, 0.000000, 0.156813, 0.000000, 0.000000, 
+normalizing 1./ImNorm = -191379072
+finished alloc and opdm, tpdm
+Building Xtilde...
+
+Active Fock Matrix
+----------------------------
+ K Time:           0.00 sec
+ Total Time:       0.00 sec
+----------------------------
+
+Active TPDM
+----------------------------
+ Total Time:       0.00 sec
+----------------------------
+
+Building Z-vector RHS...
+
+Solving CPSCF equations
+Using DIIS solver
+
+ Iter         Residual          Time (s)  
+------  --------------------  ------------
+    1      0.000000000000         0.00
+
+CPSCF converged
+
+      Total CPSCF Time
+----------------------------
+ J Time:           0.00 sec
+ K Time:           0.00 sec
+ Total Time:       0.00 sec
+----------------------------
+
+Building X...
+
+----------------------------
+ J Time:           0.00 sec
+ K Time:           0.00 sec
+ Total Time:       0.00 sec
+----------------------------
+
+end of tdci grad
+
+Total CASCI Time
+----------------------------
+ Total Time:       0.83 sec
+----------------------------
+
+ writing tdcigrad.bin
+ writing ReCn_end.bin
+ writing ImCn_end.bin
+Total processing time: 3.32 sec 
+
+ Job finished: Thu May 11 11:36:14 2023
+

@@ -1,0 +1,99 @@
+#!/bin/bash
+#
+#SBATCH --job-name=10-10
+#SBATCH --output=10-10.o%j
+#SBATCH --error=10-10.e%j
+#SBATCH --time=8:00:00
+#SBATCH --nodes=1
+#SBATCH --gpus=1
+#SBATCH --ntasks=1
+#SBATCH -p levine-a100
+
+export TeraChem=/gpfs/projects/LevineGroup/kberard/terachem_current/build
+export LD_LIBRARY_PATH=/gpfs/projects/LevineGroup/kberard/terachem_current/build/lib:$LD_LIBRARY_PATH
+export PATH=/gpfs/projects/LevineGroup/kberard/terachem_current/build/bin:$PATH
+
+module purge
+module load cuda113/toolkit/11.3
+module load intel/mkl/64/2020/20.0.1
+module load intel/mpi/64/2020/20.0.1
+
+cd $SLURM_SUBMIT_DIR
+
+call_terachem () {
+    for f in *.txt; do
+	if [ ! -f ${f%.txt}.out ] ; then
+	if [ -f ${f%.txt}.txt ] ; then
+	echo 'Processing...' $f
+	terachem -g0123 $f > ${f%.txt}.out
+	fi
+        fi
+    done
+}
+
+for d1 in */; do
+if [ -d $d1 ]; then
+echo 'Working in' $d1
+cd $d1
+for d2 in */; do
+if [ -d $d2 ]; then
+echo 'Working in' $d2
+cd $d2
+for d3 in */; do
+if [ -d $d3 ]; then
+echo 'Working in' $d3
+cd $d3
+for d4 in */; do
+if [ -d $d4 ]; then
+echo 'Working in' $d4
+cd $d4
+for d5 in */; do
+if [ -d $d5 ]; then							
+echo 'Working in' $d5
+cd $d5
+for d6 in */; do
+if [ -d $d6 ]; then
+echo 'Working in' $d6
+cd $d6
+for d7 in */; do
+if [ -d $d7 ]; then
+echo 'Working in' $d7
+cd $d7
+for d8 in */; do
+if [ -d $d8 ]; then
+echo 'Working in' $d8
+cd $d8
+call_terachem
+cd ..
+fi
+done
+call_terachem
+cd ..
+fi
+done
+call_terachem
+cd ..
+fi
+done
+call_terachem
+cd ..
+fi
+done
+call_terachem
+cd ..	
+fi
+done
+call_terachem
+cd ..
+fi
+done
+call_terachem
+cd ..
+fi
+done
+call_terachem
+cd ..	
+fi
+done
+call_terachem 
+

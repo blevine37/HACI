@@ -1,0 +1,47 @@
+gpus	              1 0
+timings		      yes
+
+method		      hf
+basis 		      STO-3G
+coordinates           hydrogen_1.4A.xyz 
+charge       		0
+spinmult     		1 
+closed_shell 		True
+restricted   		True
+precision             double
+
+
+threall 1.0e-20
+convthre 3.0e-6
+casci yes
+ci_solver direct
+dcimaxiter 300
+dciprintinfo yes
+dcipreconditioner orbenergy
+csf_basis no
+
+
+
+
+units                 angstrom
+
+
+
+
+fon          		yes			# Activate fractional occupation number (FON) method
+fon_method   		gaussian	# Type of thermal smearing method (gaussian or fermi)
+fon_temperature 	0.15		# Electronic temperature (kT), default is 0.25
+
+cassavevectors        yes
+
+
+
+
+closed                0
+active                10
+cassinglets           1
+castriplets           1
+cascharges	      yes
+
+end
+

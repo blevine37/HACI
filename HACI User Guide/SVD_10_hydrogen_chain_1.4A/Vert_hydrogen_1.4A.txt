@@ -1,0 +1,63 @@
+gpus	              1 0
+timings		      yes
+
+method		      hf
+basis 		      STO-3G
+coordinates           hydrogen_1.4A.xyz 
+charge       		0
+spinmult     		1 
+closed_shell 		True
+restricted   		True
+precision             double
+
+
+threall 1.0e-20
+convthre 3.0e-6
+casci yes
+ci_solver direct
+dcimaxiter 300
+dciprintinfo yes
+dcipreconditioner orbenergy
+csf_basis no
+
+
+
+
+units                 angstrom
+
+
+
+
+fon          		yes			# Activate fractional occupation number (FON) method
+fon_method   		gaussian	# Type of thermal smearing method (gaussian or fermi)
+fon_temperature 	0.15		# Electronic temperature (kT), default is 0.25
+
+run tdci
+tdci_recn_readfile recn_init.bin
+tdci_simulation_time 0.1
+tdci_nstep 1
+tdci_nfields 1
+tdci_laser_freq 0.0
+tdci_fdirection x
+tdci_photoneng 0.0
+tdci_diabatize_orbs no
+tdci_gradient yes
+tdci_stepprint 1
+tdci_ftype cw
+tdci_floquet_photons 0
+tdci_eshift gs
+tdci_floquet no
+tdci_corrfn_t p0
+tdci_fstrength 0.0
+
+
+
+
+closed                0
+active                10
+cassinglets           1
+castriplets           1
+cascharges	      yes
+
+end
+
